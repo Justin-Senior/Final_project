@@ -1,8 +1,12 @@
 # 3GC3 Final Project
-### Justion Senior and Nikhail Singh
+### Justin Senior and Nikhail Singh
+
+This is an extension of a project which was completed during my university and I (Justin Senior) have updated since submission with fixes and updates to features.
 
 ## Running our Code:
 To run our project simply use the make command to run the included makefile.
+Uses OpenGL and the GLUT library version 3.0.0.
+
 
 ## Description:
 Our final project randomly generates a 3D explorable environment using a Voronoi algorithm to specify a type of biome for each Voronoi Cell. Each biome hs its own types of vegetation, 
@@ -37,7 +41,7 @@ Our project implements the following features:
 1. Randomly generated terrain using voronoi cells.
 2. A  simple camera that enables you to move around and will move up and down based on the height of the terrain. <strong> Known issue </strong> is that it will crash if you get too close to the edges of the map.
 2. Four biomes: forests, mountains, deserts, and water. 
-3. A minimap that displays an overhead of the entire map
+3. A minimap that displays an overhead of the entire map (After getting a new PC this feature is not working, still working on a fix)
 4. Vegetation for biomes
 5. Textures for every surface
 
