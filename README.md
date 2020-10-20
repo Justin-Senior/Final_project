@@ -9,10 +9,10 @@ Uses OpenGL and the GLUT library version 3.0.0.
 
 
 ## Description:
-Our final project randomly generates a 3D explorable environment using a Voronoi algorithm to specify a type of biome for each Voronoi Cell. Each biome hs its own types of vegetation, 
+Our final project randomly generates a 3D explorable environment using a Voronoi algorithm to specify a type of biome for each Voronoi Cell. Each biome hs its own types of vegetation,
 uses a different height map algorithm to create distinct looking terrain and textures for each type of surface in the biomes..
 
-Our idea for this project is to create a simulation of an explorable 3D environment that we would procedurally generate. 
+Our idea for this project is to create a simulation of an explorable 3D environment that we would procedurally generate.
 The application wouldn't be a full-fledged game as we would only be able to explore but would randomly generate an environment everytime it starts up and a user could then explore the said environment. Minecraft's biomes would be an example of something similar to what we are trying to make.
 
 ## Implementation details:
@@ -22,7 +22,7 @@ For the random generation, we decided to use Voronoi cells. Originally we planne
 After doing research on this and how the implementation worked we determined that we did not need to utilize all of the features of a fully fledged Voronoi library so we decided to implement a simplified algorithm that only did what we needed to do.
 
 Our version of the algorithm works:
-1. randomly picking a set of points on the plane, our Voronoi points and assign them a biome. 
+1. randomly picking a set of points on the plane, our Voronoi points and assign them a biome.
 2. for every other point it determines which Voronoi point it is closest to and assigns that point the same biome as its Voronoi point.
 3. run different heightmap algorithms depending on the biome type.
 
@@ -39,11 +39,11 @@ Our version of the algorithm works:
 ## Features
 Our project implements the following features:
 1. Randomly generated terrain using voronoi cells.
-2. A  simple camera that enables you to move around and will move up and down based on the height of the terrain. <strong> Known issue </strong> is that it will crash if you get too close to the edges of the map.
-2. Four biomes: forests, mountains, deserts, and water. 
-3. A minimap that displays an overhead of the entire map (After getting a new PC this feature is not working, still working on a fix)
-4. Vegetation for biomes
-5. Textures for every surface
+2. A  simple camera that enables you to move around and will move up and down based on the height of the terrain. <strong> Known issue </strong> is that it will crash if you get too close to the edges of the map. The arrow keys move the camera based on where you are looking, 'q' exits the window, and ' ' pauses.
+3. Four biomes: forests, mountains, deserts, and water.
+4. A minimap that displays an overhead of the entire map (After getting a new PC this feature is not working, still working on a fix)
+5. Vegetation for biomes
+6. Textures for every surface
 
 ## References
 1. **[LearnOpenGL Textures](https://learnopengl.com/Getting-started/Textures)**
